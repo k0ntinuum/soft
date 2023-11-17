@@ -1,0 +1,55 @@
+
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{ mathrsfs }
+\usepackage{graphicx}
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[margin=0.2in]{geometry}
+\usepackage{graphicx}
+\usepackage{ulem}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\usepackage{hyperref}
+\usepackage[autostyle]{csquotes}
+\usepackage{hyperref}
+
+\usepackage{cancel}
+\renewcommand{\i}{\textit}
+\renewcommand{\b}{\textbf}
+\newcommand{\q}{\enquote}
+%\vskip1.0in
+
+
+
+
+
+\begin{document}
+
+{\setstretch{0.0}{
+
+\section*{INTRODUCTION}
+
+I work lately primarily with cellular automata (both continuous and discrete ) and symmetric cryptosystems. I think of the algorithms themselves as art (or perhaps as industrial design), and I often use the algorithms to create art in the more typical sense. This pdf is something like a directory to my current, featured projects. I provide a link to more information and source code at the bottom of each entry.
+
+
+\section*{Thorium}
+
+This symmetric cryptosystem uses a square matrix of bits as a key. The rows and columns are \q{circular shifted,} so that the matrix is topologically a torus (not exactly but \i{somewhat} like Rubik's Cube.)  \b{Cesium}, just below, includes \b{Thorium} as a special case, but I keep \b{Thorium} separate because I hope to implement it in assembly, and the base 2 version came first.
+
+
+\url{https://k0ntinuum.github.io/thorium-C/}
+
+
+\section*{Cesium}
+
+This system is generalization of \b{Thorium} to an arbitrary base.  It's easy to just use base 27 (the alphabet and an underscore), so that one can exchange messages in right away in English. I hope to write up a version in Javascript so that I can provide the encoder on a static website for actual use. I teach math, and I'd like to give my students an example of a complex but still invertible function.  
+
+\url{https://k0ntinuum.github.io/cesium-C/}
+
+
+
+}}
+\end{document}
