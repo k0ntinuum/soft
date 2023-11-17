@@ -36,7 +36,7 @@ I work lately primarily with cellular automata (both continuous and discrete ) a
 
 \section*{Thorium}
 
-This symmetric cryptosystem uses a square matrix of bits as a key. The rows and columns are \q{circular shifted,} so that the matrix is topologically a torus (not exactly but \i{somewhat} like Rubik's Cube.)  \b{Cesium}, just below, includes \b{Thorium} as a special case, but I keep \b{Thorium} separate because I hope to implement it in assembly, and the base 2 version came first.
+This symmetric cryptosystem uses a square matrix of bits as a key. The rows and columns are \q{circular shifted,} so that the matrix is topologically a torus (not exactly but \i{somewhat} like Rubik's Cube.)  Cesium, just below, includes Thorium as a special case, but I keep Thorium separate because I hope to implement it in assembly, and the base 2 version came first.
 
 
 \url{https://k0ntinuum.github.io/thorium-C/}
@@ -44,15 +44,58 @@ This symmetric cryptosystem uses a square matrix of bits as a key. The rows and 
 
 \section*{Cesium}
 
-This system is generalization of \b{Thorium} to an arbitrary base.  It's easy to just use base 27 (the alphabet and an underscore), so that one can exchange messages in right away in English. I hope to write up a version in Javascript so that I can provide the encoder on a static website for actual use. I teach math, and I'd like to give my students an example of a complex but still invertible function.  
+This system is generalization of Thorium to an arbitrary base.  It's easy to just use base 27 (the alphabet and an underscore), so that one can exchange messages in right away in English. I hope to write up a version in Javascript so that I can provide the encoder on a static website for actual use. I teach math, and I'd like to give my students an example of a complex but still invertible function.  
 
 \url{https://k0ntinuum.github.io/cesium-C/}
 
 \section*{Cone}
 
-This symmetric cryptosystem is based on a triangular implementation of a ternary elementary cellular automata. The key is  27 ternary symbols which represent a rule for a ternary cellular automaton with a neighborhood size of $3$. The rule is then also used as a seed (along with a symbol of plaintext) in order to get the ciphertext symbol. 
+This symmetric cryptosystem is based on a triangular implementation of a ternary elementary cellular automata. The key is  27 ternary symbols which represent a rule for a ternary cellular automaton with a neighborhood size of $3$. The rule is then also used as a seed (along with a symbol of plaintext) in order to get the ciphertext symbol.
 
 \url{https://k0ntinuum.github.io/cone-C/}
+
+\section*{Fflo}
+
+Fflo implements a continuous cellular automaton, allowing (in most versions) the user to \i{play} the automaton like a visual-musical instrument. You can try a stripped-down version in the browser here : \url{https://k0ntinuum.github.io/kont-ts-min/}.  
+
+I've written Fflo  in C, Rust, JavaScript, and Go. I've written it to use a typical graphics library (Raylib), and I've written it to use \q{textgraphics} --- to run in the console, using ANSI escape codes to get pixels. In one C version, a terminal \i{raw mode} allows for a interactive textgraphics experience. I've also written Rust/WebAssembly versions design to play well with Wasi/Wasmtime. Some versions allow the user to save \q{cartridges} (filter settings), so that promising parameters can be explored again. Some very rich patterns can emerge from simple rules. Some variants are just different enough to have their own names (e. g. Tornado).
+
+\url{https://k0ntinuum.github.io/fflo-mn-C}
+
+\url{https://k0ntinuum.github.io/fflo-ia-C}
+
+\url{https://k0ntinuum.github.io/fflo-go}
+
+\url{https://k0ntinuum.github.io/fflo-tg-rs}
+
+\url{https://k0ntinuum.github.io/torn-rs/}
+
+\section*{Scope}
+
+This program visualizes the interactive real-time learning of an artificial neural network. The user can vary the architecture of the network, adjust the learning rate, reset parameters, and so on.  I wrote the first version in C while studying deep learning in grad school. Other versions followed in Rust, Go, and Javascript. The JS browser version (\url{https://k0ntinuum.github.io/scope-js/} is extremely simplified (the user can choose between $3$ buttons). 
+
+
+\section*{Pre}
+Pre also refers to a family of related ideas. The name comes from the use of prefix or instantaneous codes within a symmetric cryptosystem. One input symbol might become several output symbols. One output symbol might condense several input symbols. Each state of the machine writes a prefix code, but the union of prefix codes (the total output of the machine) is not generally a prefix code. This means eavesdroppers will have trouble even tokenized the ciphertext to begin with. The reading or input mode of the machine uses prefixes in a different way, checking for multi-symbol inputs to compress in a first-come first-serve basis. This reading mode twist isn't necessary for the system, but it amplifies and emphasizes the theme of variable length outputs.  
+
+\url{https://k0ntinuum.github.io/revolver-jl}
+
+\url{https://k0ntinuum.github.io/prefix-jl}
+
+\url{https://k0ntinuum.github.io/refix-jl}
+
+
+\section*{Starship}
+
+I wrote the first version of Starship as an undergrad studying elementary cellular automata in a summer research program. The program (really family of programs) provides a visual exploration of computational space, in particular the space of ECA. Wolfram focused (at least most famously) on binary automata, but Starship generalizes this to an arbitrary base.
+
+\url{https://github.com/k0ntinuum/starship}
+
+
+
+
+
+
 
 
 
