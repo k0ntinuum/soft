@@ -32,8 +32,7 @@
 
 \section*{INTRODUCTION}
 
-I work lately primarily with cellular automata (both continuous and discrete ) and symmetric cryptosystems. I think of the algorithms themselves as art (or perhaps as industrial design), and I often use the algorithms to create art in the more typical sense. This pdf is something like a directory to my current, featured projects. I provide a link to more information and source code at the bottom of each entry.
-
+I work lately primarily with cellular automata (both continuous and discrete ) and symmetric cryptosystems. I think of the algorithms themselves as art (or perhaps as industrial design), and I often use the algorithms to create art in the more typical sense. This pdf is something like a directory to my current, featured projects. I provide a link to more information and source code at the bottom of each entry.	
 
 \section*{Thorium}
 
@@ -48,6 +47,13 @@ This symmetric cryptosystem uses a square matrix of bits as a key. The rows and 
 This system is generalization of \b{Thorium} to an arbitrary base.  It's easy to just use base 27 (the alphabet and an underscore), so that one can exchange messages in right away in English. I hope to write up a version in Javascript so that I can provide the encoder on a static website for actual use. I teach math, and I'd like to give my students an example of a complex but still invertible function.  
 
 \url{https://k0ntinuum.github.io/cesium-C/}
+
+\section*{Cone}
+
+This symmetric cryptosystem is based on a triangular implementation of a ternary elementary cellular automata. The key is  27 ternary symbols which represent a rule for a ternary cellular automaton with a neighborhood size of $3$. The rule is then also used as a seed (along with a symbol of plaintext) in order to get the ciphertext symbol. 
+
+\url{https://k0ntinuum.github.io/cone-C/}
+
 
 
 
