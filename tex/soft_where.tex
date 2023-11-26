@@ -39,29 +39,28 @@ I work lately primarily with cellular automata (both continuous and discrete ) a
 This symmetric cryptosystem uses a square matrix of bits as a key. The rows and columns are \q{circular shifted,} so that the matrix is topologically a torus (not exactly but \i{somewhat} like Rubik's Cube.)  Cesium, just below, includes Thorium as a special case, but I keep Thorium separate because I hope to implement it in assembly, and the base 2 version came first.
 
 
-\url{https://k0ntinuum.github.io/thorium-C/}
+\url{https://k0ntinuum.github.io/th0rium/}
 
 
 \section*{Cesium}
 
-This system is generalization of Thorium to an arbitrary base.  It's easy to just use base 27 (the alphabet and an underscore), so that one can exchange messages in right away in English. I hope to write up a version in Javascript so that I can provide the encoder on a static website for actual use. I teach math, and I'd like to give my students an example of a complex but still invertible function.  
+This system is generalization of Thorium to an arbitrary base.  It's easy to just use base 27 (the alphabet and an underscore), so that one can exchange messages in right away in English. I hope to write up a version in Javascript so that I can provide the encoder on a static website for actual use. I teach math, and I'd like to give my students an example of a complex but still invertible function. The source code is available within the Thorium repo. 
 
-\url{https://k0ntinuum.github.io/cesium-C/}
+\url{https://k0ntinuum.github.io/th0rium/}
 
 \section*{Cone}
 
 This symmetric cryptosystem is based on a triangular implementation of a ternary elementary cellular automata. The key is  27 ternary symbols which represent a rule for a ternary cellular automaton with a neighborhood size of $3$. The rule is then also used as a seed (along with a symbol of plaintext) in order to get the ciphertext symbol.
 
-\url{https://k0ntinuum.github.io/cone-C/}
+\url{https://k0ntinuum.github.io/c0ne/}
 
 
 \section*{Fortex}
 
 This system, like Cone, features a triangular key. Like Cesium, the base used is adjustable. Rows of the triangle are rotated, and a central column functions like an escalator (all the shifts are circular). The modular sum of elements in this central column is added to plaintext symbols, and the apex of the pyramid is used to represent this changing value in console \q{textgraphics} demonstrations.
 
-\url{https://k0ntinuum.github.io/fortex-jl/}
+\url{https://k0ntinuum.github.io/f0rtex/}
 
-\url{https://k0ntinuum.github.io/fortex-C/}
   
 
 
