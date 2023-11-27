@@ -33,61 +33,26 @@
 
 This document summarizes featured projects and provides links to more information, including source code. 
 
-\section*{Cryptography}
-
-\b{THORIUM / CESIUM }
-
-This symmetric cryptosystem uses a square matrix of symbols, such as bits, as a key. The rows and columns are \q{circularly shifted,} so that the matrix is topologically a torus. The diagonal of the matrix and its trace plays a central row. 
-
-\url{https://k0ntinuum.github.io/th0rium/}
+\b{THORIUM / CESIUM } \quad  This symmetric cryptosystem uses a square matrix of symbols, such as bits, as a key. The rows and columns are \q{circularly shifted,} so that the matrix is topologically a torus. The diagonal of the matrix and its trace plays a central row. \quad \url{https://k0ntinuum.github.io/th0rium/}
 
 \jmp
 
-\b{CONE}
-
-This symmetric cryptosystem is based on a \q{triangular} implementation of ternary elementary cellular automata. The key is  27 ternary symbols which represent a rule for a ternary cellular automaton with a neighborhood size of $3$. The rule is then also used as a seed (along with a symbol of plaintext) in order to get the ciphertext symbol.
-
-\url{https://k0ntinuum.github.io/c0ne/}
+\b{CONE} \quad This symmetric cryptosystem is based on a \q{triangular} implementation of ternary elementary cellular automata. The key is  27 ternary symbols which represent a rule for a ternary cellular automaton with a neighborhood size of $3$. The rule is then also used as a seed (along with a symbol of plaintext) in order to get the ciphertext symbol. \quad \url{https://k0ntinuum.github.io/c0ne/}
 
 \jmp
 
-\b{FORTEX}
-
-This system, like Cone, features a triangular key. Like Thorium.Cesium, the base used is adjustable. Rows of the triangle are rotated, and a central column functions like an escalator (all shifts are circular). The modular sum of elements in this central column is added to plaintext symbols, and the apex of the pyramid is used to represent this changing value in console \q{textgraphics} demonstrations.
-
-\url{https://k0ntinuum.github.io/f0rtex/}
+\b{FORTEX} \quad This system, like Cone, features a triangular key. Like Thorium.Cesium, the base used is adjustable. Rows of the triangle are rotated, and a central column functions like an escalator (all shifts are circular). The modular sum of elements in this central column is added to plaintext symbols, and the apex of the pyramid is used to represent this changing value in console \q{textgraphics} demonstrations. \quad \url{https://k0ntinuum.github.io/f0rtex/}
 
 \jmp
 
-\b{PRE}
-
-Pre or Prefix is a symmetric cryptosystem featuring prefix or instantaneous codes. One input symbol might become several output symbols, and, one output symbol might condense several input symbols. Each state of the machine writes a prefix code, which allows for decoding, but the states together write a union of prefix  codes which is not in general itself a prefix codes. This means that the ciphertext is difficult to tokenize. 
-
-\url{https://k0ntinuum.github.io/prEfix}
-
-
-\section*{Elementary and Continuous Cellular Automata}
+\b{PRE} \quad Pre or Prefix is a symmetric cryptosystem featuring prefix or instantaneous codes. One input symbol might become several output symbols, and, one output symbol might condense several input symbols. Each state of the machine writes a prefix code, which allows for decoding, but the states together write a union of prefix  codes which is not in general itself a prefix codes. This means that the ciphertext is difficult to tokenize.  \quad \url{https://k0ntinuum.github.io/prEfix}
   
-\b{FFLO}
+\b{FFLO} \quad Fflo implements a continuous cellular automaton, allowing (in most versions) the user to \i{play} the automaton like a visual-musical instrument. Of all the programs featured here, Fflo is the most graphics intensive. \quad \url{https://k0ntinuum.github.io/ffl0}
 
-Fflo implements a continuous cellular automaton, allowing (in most versions) the user to \i{play} the automaton like a visual-musical instrument. Of all the programs featured here, Fflo is the most graphics intensive.
+\b{STARSHIP} \quad This program (really family of programs) provides a live visual exploration of the computational space of ECA or elementary cellular automata. Wolfram focused (at least most famously) on binary automata, but Starship generalizes this to an arbitrary base. This program can also be used to generate \q{quasi-organic} abstract art. \quad \url{https://github.com/k0ntinuum/starship}
 
+\b{SCOPE} \quad This program visualizes the interactive real-time learning of an artificial neural network. The user can vary the architecture of the network, adjust the learning rate, reset parameters, and so on. \url{https://github.com/k0ntinuum/sc0pe}  
 
-\url{https://k0ntinuum.github.io/ffl0}
-
-
-\b{STARSHIP}
-
-This program (really family of programs) provides a live visual exploration of the computational space of ECA or elementary cellular automata. Wolfram focused (at least most famously) on binary automata, but Starship generalizes this to an arbitrary base. This program can also be used to generate \q{quasi-organic} abstract art.
-
-\url{https://github.com/k0ntinuum/starship}
-
-
-\section*{Artificial Neural Networks}
-
-\b{SCOPE}
-
-This program visualizes the interactive real-time learning of an artificial neural network. The user can vary the architecture of the network, adjust the learning rate, reset parameters, and so on.  I wrote the first version in C while studying deep learning in grad school. Other versions followed in Rust, Go, and Javascript. The JS browser version (\url{https://k0ntinuum.github.io/scope-js/} is extremely simplified (the user can choose between $3$ buttons). 
 
 
 
